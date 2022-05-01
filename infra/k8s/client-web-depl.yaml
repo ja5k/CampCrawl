@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-web-depl
+spec:
+  replicas:
+  selector:
+    matchLabels:
+      app: client-web
+  template:
+    metadata:
+      labels:
+        app: client-web
+    spec:
+      containers:
+        - name: client-web
+          image: ja5k/client-web
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-web-srv
+spec:
+  selector:
+    app: client-web
+  ports: 
+    - name: client-web
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
