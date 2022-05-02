@@ -28,4 +28,4 @@ router.post('/api/users/signup',
     res.send({});
 });
 
-export { router as signoutRouter };
+export { router as signupRouter };
