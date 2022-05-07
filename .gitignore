@@ -1,3 +1,19 @@
 node_modules
 .DS_Store
 /client-web/.next
+
+# ignore some files in laravelkube
+laravelkube/node_modules
+laravelkube/public/hot
+laravelkube/public/storage
+laravelkube/storage/*.key
+laravelkube/vendor
+laravelkube/.env
+laravelkube/.env.backup
+laravelkube/.phpunit.result.cache
+laravelkube/Homestead.json
+laravelkube/Homestead.yaml
+laravelkube/npm-debug.log
+laravelkube/yarn-error.log
+laravelkube/.idea
+laravelkube/.vscode

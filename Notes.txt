@@ -1,3 +1,9 @@
 Laravel Kubernetes Setup Guide
 https://cylab.be/blog/146/run-your-laravel-application-on-kubernetes
 https://chris-vermeulen.com/laravel-in-kubernetes/
+
+Install laravel:
+curl -s "https://laravel.build/laravelkube" | bash
+cd laravelkube
+APP_PORT=8003 ./vendor/bin/sail up
+http://localhost:8003
